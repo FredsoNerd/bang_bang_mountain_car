@@ -16,11 +16,15 @@ For simplicity, see the `requirements.txt` for a detailed description of the nec
 
 In the `examples` folder, one can find some of the working code examples:
  * `gymnasium_mountain_car_discrete_q_learning`: implements a solutin for the [Mountain Car Discrete](https://gymnasium.farama.org/environments/classic_control/mountain_car/) problem, using tabular Q-Learning;
- * `gymnasium_mountain_car_continuous_q_learning`: implements a solutin for the [Mountain Car Contunuous](https://gymnasium.farama.org/environments/classic_control/mountain_car_continuous/) problem, using discretization of action space and tabular Q-Learning;
- * `gymnasium_mountain_car_continuous_reinforce`: implements a solutin for the [Mountain Car Contunuous](https://gymnasium.farama.org/environments/classic_control/mountain_car_continuous/) problem, using a Monte-Carlo REINFORCE method, with a normal parametrization of the policies, where the parameter (mu, var) are given by Neural Networks.
- * `gymnasium_mountain_car_continuous_DDPG`: implements a solutin for the [Mountain Car Contunuous](https://gymnasium.farama.org/environments/classic_control/mountain_car_continuous/) problem, using a Deep Deterministic Policy Gradient (DDPG) with a normal parametrization of the policies, where the parameter (mu, var) are given by Neural Networks.
+ * `gymnasium_mountain_car_continuous_q_learning`: implements a solutin for the [Mountain Car Continuous](https://gymnasium.farama.org/environments/classic_control/mountain_car_continuous/) problem, using discretization of action space and tabular Q-Learning;
+ * `gymnasium_mountain_car_continuous_reinforce`: implements a solutin for the [Mountain Car Continuous](https://gymnasium.farama.org/environments/classic_control/mountain_car_continuous/) problem, using a Monte-Carlo REINFORCE method, with a normal parametrization of the policies, where the parameter (mu, var) are given by Neural Networks.
+ * `gymnasium_mountain_car_continuous_DDPG`: implements a solutin for the [Mountain Car Continuous](https://gymnasium.farama.org/environments/classic_control/mountain_car_continuous/) problem, using a Deep Deterministic Policy Gradient (DDPG) with a normal parametrization of the policies, where the parameter (mu, var) are given by Neural Networks.
  
-Inside each folder is a running `*.py` file, responsible for the training, generating the plots and running a final sample. 
+Inside each folder is a running `*.py` file, responsible for the training, generating the plots and running a final sample.
+
+## Results
+
+<p align="center"><img src="gymnasium_mountain_car_discrete_q_learning/mcar_discrete_q_table.gif" alt="Mountain Car Discrete with Tabular Q-Learning"/></p>
 
 ## References
 
