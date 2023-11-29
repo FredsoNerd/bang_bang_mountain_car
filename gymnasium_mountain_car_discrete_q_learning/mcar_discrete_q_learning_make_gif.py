@@ -50,14 +50,14 @@ def run(episodes = 100, obs_space_pos_n = 20, obs_space_vel_n = 20, q_table_file
 
 def save_frames_as_gif(frames, filename = None):
     # Mess with this to change frame size
-    plt.figure()
+    plt.figure(figsize=(frames[0].shape[1] / 72.0, frames[0].shape[0] / 72.0), dpi=72)
 
     patch = plt.imshow(frames[0])
     plt.axis('off')
 
     animate = lambda i: patch.set_data(frames[i])
     anim = animation.FuncAnimation(plt.gcf(), animate, frames = len(frames), interval=50)
-    anim.save(filename, writer='imagemagick', fps=60)
+    anim.save(filename, writer='imagemagick', fps=24)
 
 
 # render running examples from trained table
