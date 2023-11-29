@@ -1,0 +1,9 @@
+gymnasium==0.29.1
+matplotlib==3.7.3
+numpy==1.24.3
+tensorflow==2.13.1
+torch==1.7.0
+tqdm==4.66.1
+mujoco==2.3.7
+pygame==2.5.2
+
