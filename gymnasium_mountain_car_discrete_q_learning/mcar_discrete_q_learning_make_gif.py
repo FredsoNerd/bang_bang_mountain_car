@@ -50,7 +50,7 @@ def run(episodes = 100, obs_space_pos_n = 20, obs_space_vel_n = 20, q_table_file
 
 def save_frames_as_gif(frames, filename = None):
     # Mess with this to change frame size
-    plt.figure(figsize=(frames[0].shape[1] / 72.0, frames[0].shape[0] / 72.0), dpi=72)
+    plt.figure()
 
     patch = plt.imshow(frames[0])
     plt.axis('off')
@@ -61,4 +61,4 @@ def save_frames_as_gif(frames, filename = None):
 
 
 # render running examples from trained table
-run(episodes=5, q_table_file = "mcar_discrete_q_table.pkl", gif_file = "mcar_discrete_q_table.gif")
+run(episodes=1, q_table_file = "mcar_discrete_q_table.pkl", gif_file = "mcar_discrete_q_table.gif")
